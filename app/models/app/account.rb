@@ -1,0 +1,2 @@
+module App::Account
+end
