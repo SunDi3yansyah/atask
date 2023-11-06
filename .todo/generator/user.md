@@ -12,7 +12,7 @@ rails g scaffold App::Withdrawal user:references code 'amount:decimal{26,2}' ban
 
 # MODEL (--no-migration --skip)
 ```
-
+rails g model App::Account::SignIn --no-migration --skip
 --- PENDING
 
 ```
@@ -20,7 +20,7 @@ rails g scaffold App::Withdrawal user:references code 'amount:decimal{26,2}' ban
 
 # CONTROLLER / SCAFFOLD CONTROLLER
 ```
-
+rails g controller App::Account::SignIn create --routing-specs
 --- PENDING
 
 ```

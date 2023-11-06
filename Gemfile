@@ -29,6 +29,7 @@ group :development, :test, :staging do
   gem 'database_cleaner', '~> 2.0.2'
   gem 'factory_bot_rails', '~> 6.2.0'
   gem 'faker', '~> 3.2.2'
+  gem 'i18n-tasks', '~> 1.0.13'
   gem 'rspec-rails', '~> 6.0.3'
   gem 'rspec-retry', '~> 0.6.2'
   gem 'shoulda-matchers', '~> 5.3.0'
