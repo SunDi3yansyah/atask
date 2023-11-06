@@ -21,3 +21,20 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+
+# Add
+/.env
+/.rbenv-vars
+/doc
+/coverage
+/vendor/bundle
+/vendor/ruby
+/public/storages
+/.idea
+/.vscode
+/.rubocop*.yml
+/.solargraph.yml
+/**/.DS_Store
+/spec/examples.txt
+/public/assets
