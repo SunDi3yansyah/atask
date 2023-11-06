@@ -30,6 +30,22 @@ id:
   general_product_price_update: Harga product %{product_name} berhasil diperbarui
   service_is_busy: Layanan sedang sibuk
 
+  # Controller Validations
+  foreign_key_is_not_present_in_table: Kunci asing tidak ada dalam tabel
+
+  # Account
+  account_identity_does_not_exist: Identitas (email / nomor telepon) tidak ada
+  account_password_does_not_exist: Kata sandi akun Anda tidak ada, silakan lakukan lupa kata sandi Anda
+  account_password_is_invalid: Kata sandi tidak valid
+  account_is_not_active: Akun anda tidak aktif
+  account_successfully_logged_in: Anda berhasil masuk
+  account_successfully_request_password: Anda telah berhasil meminta kata sandi baru, silakan periksa email Anda
+  account_forgot_password_expired_key: Tautan ini telah kedaluwarsa, silakan lakukan lupas password kembali
+  account_password_was_updated_successfully: Kata sandi Anda berhasil diperbarui
+  account_fcm_invalid_token: Token FCM tidak valid
+  account_expired_refresh_token: Refresh token telah kadaluarsa
+  account_successfully_refreshed_token: Berhasil refresh token
+
   # Model Validations
   unknown_email_provider: provider tidak dikenali
   can_only_contain_letters_numbers: hanya boleh berisi huruf dan angka

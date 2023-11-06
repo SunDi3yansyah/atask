@@ -30,6 +30,22 @@ en:
   general_product_price_update: Product price %{product_name} successfully updated
   service_is_busy: Service is busy
 
+  # Controller Validations
+  foreign_key_is_not_present_in_table: Foreign key is not present in table
+
+  # Account
+  account_identity_does_not_exist: Identity (email/username) does not exist
+  account_password_does_not_exist: Your account password does not exist, please forget your password
+  account_password_is_invalid: Password is invalid
+  account_is_not_active: Your account is not active
+  account_successfully_logged_in: You have successfully logged in
+  account_successfully_request_password: You have successfully requested a new password, please check your email
+  account_forgot_password_expired_key: The link you followed has expired
+  account_password_was_updated_successfully: Your password was updated successfully
+  account_fcm_invalid_token: FCM invalid token
+  account_expired_refresh_token: Refresh token has expired
+  account_successfully_refreshed_token: Successfully refreshed token
+
   # Model Validations
   unknown_email_provider: unknown provider
   can_only_contain_letters_numbers: can only contain letters and numbers
