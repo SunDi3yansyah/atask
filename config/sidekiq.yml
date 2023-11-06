@@ -1,0 +1,14 @@
+:concurrency: 10
+:pidfile: tmp/pids/sidekiq.pid
+:logfile: log/sidekiq.log
+development:
+  :concurrency: 10
+staging:
+  :concurrency: 10
+production:
+  :concurrency: 10
+:queues:
+  - default
+  - mailers
+  - high
+  - low

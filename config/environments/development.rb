@@ -59,4 +59,16 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+
+  if ENV['RAILS_LOG_TO_STDOUT'] == 'true'
+    logger           = ActiveSupport::Logger.new(STDOUT)
+    logger.formatter = config.log_formatter
+    config.logger    = ActiveSupport::TaggedLogging.new(logger)
+  end
+
+  config.action_controller.asset_host = "http://localhost:#{ENV['PORT']}"
+
+  config.annotations.register_directories('spec')
+  config.annotations.register_extensions('todo', 'TODO', 'task') { |annotation| /\/\/\s*(#{annotation}):?\s*(.*)$/ }
 end

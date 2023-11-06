@@ -1,0 +1,130 @@
+id:
+  # General
+  notice_create: Data berhasil dibuat
+  notice_update: Data berhasil diperbarui
+  notice_destroy: Data berhasil dihapus
+  notice_no_data_changes: Tidak ada perubahan data
+
+  alert_failed_create: Data gagal dibuat
+  alert_failed_update: Data gagal diperbarui
+  alert_failed_destroy: Data gagal dihapus
+
+  alert_record_not_exists: Data tidak ada di sistem
+  alert_record_exists: Data yang sama telah ada di sistem
+  alert_restrict_with_error: Data tidak bisa dihapus karena terhubung dengan data lainnya
+  alert_cannot_be_deleted_by_you: Data tidak bisa dihapus oleh anda
+  alert_try_again: Harap tunggu %{count} %{time} lagi sebelum anda mencoba kembali
+  standard_error_from_server: Kesalahan dari server
+  data_chosen_does_not_belong_you: Anda tidak bisa memilih data ini
+  you_dont_have_access: Anda tidak mempunyai akses
+  cannot_have_permission_to_update_this_data: Anda tidak mempunyai akses untuk mengubah data ini
+  cannot_have_permission_to_destroy_this_data: Anda tidak mempunyai akses untuk menghapus data ini
+  dont_have_permission_to_create_this_data: Anda tidak mempunyai akses untuk membuat data ini
+  validation_failed: Validasi gagal
+  custom_status_code_503: Sistem transaksi sedang dalam proses maintenance, silakan coba beberapa saat lagi
+  duplicate_request: Permintaan ganda
+  model_failure_encryption: '[FAILURE CODE]: 01'
+  general_failure_decryption: Entitas %{attribute} gagal dekripsi
+  general_failure_requests: Maaf kami tidak dapat menyelesaikan permintaan anda. coba lagi setelah beberapa saat
+  general_failure_transaction: Maaf transaksi tidak dapat dilanjutkan, silahkan coba beberapa saat lagi
+  general_product_price_update: Harga product %{product_name} berhasil diperbarui
+  service_is_busy: Layanan sedang sibuk
+
+  # Model Validations
+  unknown_email_provider: provider tidak dikenali
+  can_only_contain_letters_numbers: hanya boleh berisi huruf dan angka
+  cant_less_than_0_and_must_integer: tidak boleh kurang dari 0 dan harus bilangan bulat
+
+  # From Rails
+  # ActiveRecord: https://github.com/rails/rails/blob/master/activerecord/lib/active_record/locale/en.yml
+  # ActiveModel: https://github.com/rails/rails/blob/master/activemodel/lib/active_model/locale/en.yml
+  errors:
+    messages:
+      available: tersedia
+
+      carrierwave_processing_error: gagal diproses
+      carrierwave_integrity_error: bukan dari jenis file yang diizinkan
+      carrierwave_download_error: tidak dapat diunduh
+      extension_allowlist_error: "Anda tidak diizinkan mengunggah %{extension} file, jenis yang diizinkan: %{allowed_types}"
+      extension_denylist_error: "Anda tidak diizinkan mengunggah %{extension} file, jenis yang dilarang: %{prohibited_types}"
+      content_type_allowlist_error: "Anda tidak diizinkan mengunggah %{content_type} file, jenis yang diizinkan: %{allowed_types}"
+      content_type_denylist_error: "Anda tidak diizinkan mengunggah %{content_type} file"
+      rmagick_processing_error: "Gagal memanipulasi dengan rmagick, mungkin itu bukan gambar?"
+      mini_magick_processing_error: "Gagal memanipulasi dengan MiniMagick, mungkin itu bukan gambar? Kesalahan Asli: %{e}"
+      vips_processing_error: "Gagal memanipulasi dengan vips, mungkin itu bukan gambar? Kesalahan Asli: %{e}"
+      min_size_error: "Ukuran file harus lebih besar dari %{min_size}"
+      max_size_error: "Ukuran file harus kurang dari %{max_size}"
+
+  # Reset from Helper
+  number:
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: M
+          million: Jt
+          quadrillion: Q
+          thousand: Rb
+          trillion: T
+          unit: ''
+
+  # Status Codes
+  status_code_100: Continue
+  status_code_101: Switching Protocols
+  status_code_102: Processing
+  status_code_200: OK
+  status_code_201: Created
+  status_code_202: Accepted
+  status_code_203: Non-Authoritative Information
+  status_code_204: No Content
+  status_code_205: Reset Content
+  status_code_206: Partial Content
+  status_code_207: Multi-Status
+  status_code_208: Already Reported
+  status_code_226: IM Used
+  status_code_300: Multiple Choices
+  status_code_301: Moved Permanently
+  status_code_302: Found
+  status_code_303: See Other
+  status_code_304: Not Modified
+  status_code_305: Use Proxy
+  status_code_307: Temporary Redirect
+  status_code_308: Permanent Redirect
+  status_code_400: Bad Request
+  status_code_401: Unauthorized
+  status_code_402: Payment Required
+  status_code_403: Forbidden
+  status_code_404: Not Found
+  status_code_405: Method Not Allowed
+  status_code_406: Not Acceptable
+  status_code_407: Proxy Authentication Required
+  status_code_408: Request Timeout
+  status_code_409: Conflict
+  status_code_410: Gone
+  status_code_411: Length Required
+  status_code_412: Precondition Failed
+  status_code_413: Payload Too Large
+  status_code_414: URI Too Long
+  status_code_415: Unsupported Media Type
+  status_code_416: Range Not Satisfiable
+  status_code_417: Expectation Failed
+  status_code_421: Misdirected Request
+  status_code_422: Unprocessable Entity
+  status_code_423: Locked
+  status_code_424: Failed Dependency
+  status_code_426: Upgrade Required
+  status_code_428: Precondition Required
+  status_code_429: Too Many Requests
+  status_code_431: Request Header Fields Too Large
+  status_code_451: Unavailable for Legal Reasons
+  status_code_500: Internal Server Error
+  status_code_501: Not Implemented
+  status_code_502: Bad Gateway
+  status_code_503: Service Unavailable
+  status_code_504: Gateway Timeout
+  status_code_505: HTTP Version Not Supported
+  status_code_506: Variant Also Negotiates
+  status_code_507: Insufficient Storage
+  status_code_508: Loop Detected
+  status_code_510: Not Extended
+  status_code_511: Network Authentication Required

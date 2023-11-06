@@ -5,12 +5,15 @@
 
 # Read more: https://github.com/cyu/rack-cors
 
-# Rails.application.config.middleware.insert_before 0, Rack::Cors do
-#   allow do
-#     origins "example.com"
-#
-#     resource "*",
-#       headers: :any,
-#       methods: [:get, :post, :put, :patch, :delete, :options, :head]
-#   end
-# end
+CORS_DOMAINS = ["localhost:#{ENV['PORT']}"]
+
+Rails.application.config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    origins CORS_DOMAINS
+
+    resource "*",
+             headers: :any,
+             expose: %w(ETag Link X-Per-Page X-Page X-Total),
+             methods: [:get, :post, :put, :patch, :delete, :options, :head]
+  end
+end

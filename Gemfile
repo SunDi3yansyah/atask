@@ -3,43 +3,49 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.2.2"
 
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.8"
-
-# Use postgresql as the database for Active Record
-gem "pg", "~> 1.1"
-
-# Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.0"
-
-# Build JSON APIs with ease [https://github.com/rails/jbuilder]
+gem "pg", "~> 1.5.4"
+gem "puma", "~> 5.6.7"
 # gem "jbuilder"
-
-# Use Redis adapter to run Action Cable in production
-# gem "redis", "~> 4.0"
-
-# Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
+gem "redis", "~> 4.8.1"
 # gem "kredis"
-
-# Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
-# gem "bcrypt", "~> 3.1.7"
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem "bcrypt", "~> 3.1.19"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
-
-# Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
-
-# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem "rack-cors"
+gem "rack-cors"
 
 group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
 
 group :development do
-  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
 
+# Additional Gems
+group :development, :test, :staging do
+  gem 'annotate', '~> 3.2.0'
+  gem 'awesome_print', '~> 1.9.2'
+  gem 'database_cleaner', '~> 2.0.2'
+  gem 'factory_bot_rails', '~> 6.2.0'
+  gem 'faker', '~> 3.2.2'
+  gem 'rspec-rails', '~> 6.0.3'
+  gem 'rspec-retry', '~> 0.6.2'
+  gem 'shoulda-matchers', '~> 5.3.0'
+  gem 'webmock', '~> 3.19.1'
+end
+
+gem 'active_model_serializers', '~> 0.10.14'
+gem 'api-pagination', '~> 5.0.0'
+gem 'dotenv-rails', '~> 2.8.1'
+gem 'httparty', '~> 0.21.0'
+gem 'jwt', '~> 2.7.1'
+gem 'kaminari', '~> 1.2.2'
+gem 'oj', '~> 3.16.1'
+gem 'rack-cache', '~> 1.14.0'
+gem 'rails-i18n', '~> 7.0.8'
+gem 'redis-namespace', '~> 1.11.0'
+gem 'redis-rack-cache', '~> 2.2.1'
+gem 'redis-rails', '~> 5.0.2'
+gem 'sidekiq', '~> 7.2.0'
+gem 'validates_email_format_of', '~> 1.7.2'
