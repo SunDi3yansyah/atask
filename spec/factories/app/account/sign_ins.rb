@@ -2,7 +2,7 @@ FactoryBot.define do
   factory :app_account_sign_in, class: 'App::Account::SignIn' do
     name { Faker::Name.name }
     phone { "+628#{rand(1000000000..9999999999)}" }
-    email { Faker::Internet.free_email }
+    email { Faker::Internet.unique.email(domain: 'gmail.com') }
     password { SecureRandom.urlsafe_base64(5) }
   end
 end
